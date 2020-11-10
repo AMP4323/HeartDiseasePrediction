@@ -128,7 +128,6 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
@@ -157,8 +156,183 @@
       <a href="" id="pop1btn" onclick="openpopup('pop1')" class="btn-get-started cd-popup-trigger" data-modal="modal-12">START</a>
       <div id="pop1" class="cd-popup" role="alert">
         <div class="cd-popup-container">
-          <p>Are you sure you want to delete this element 1 ?</p>
           <a href="#0" class="cd-popup-close"></a>
+          <div class="card-body" style="padding-top: 5%;">
+            <form autocomplete="off" class="form" role="form">
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Age</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="number" placeholder="Enter your Age">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Gender</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="gender" size="0">
+                    <option selected>Choose...</option>
+                    <option value="Male">
+                      Male
+                    </option>
+                    <option value="Female">
+                      Female
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Chest Pain type</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="chestpain" size="0">
+                    <option selected>Choose...</option>
+                    <option value="0">
+                      0
+                    </option>
+                    <option value="1">
+                      1
+                    </option>
+                    <option value="2">
+                      2
+                    </option>
+                    <option value="3">
+                      3
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Resting Blood Pressure</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="number" placeholder="Values in mmHg" value="Restingbp">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Serum Cholestoral</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="number" placeholder="Values in mg/dl" value="Cholestoral">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Fasting Blood Sugar</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="bloodsugar" size="0" >
+                    <option selected>Choose...</option>
+                    <option value="yes">
+                      > 120 mg/dl
+                    </option>
+                    <option value="no">
+                      < 120 mg/dl
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Resting electrocardiographic results</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="restingec" size="0" >
+                    <option selected>Choose...</option>
+                    <option value="0">
+                      0
+                    </option>
+                    <option value="1">
+                      1
+                    </option>
+                    <option value="2">
+                      2
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Max. Heart Rate Achieved</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="number" value="heartrate"> 
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Exercise induced angina</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="inducedangina" size="0">
+                    <option selected>Choose...</option>
+                    <option value="yes">
+                      Yes
+                    </option>
+                    <option value="no">
+                      No
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Oldpeak</label>
+                <div class="col-lg-9">
+                  <input class="form-control" type="number" value="oldpeak" placeholder="Values in decimals eg. 00.00">
+                  <small class="form-text text-muted" id="passwordHelpBlock">oldpeak = St depression induced by exercise relative to rest</small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">The Slope of peak exercise ST segment</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="slope" size="0">
+                    <option selected>Choose...</option>
+                    <option value="0">
+                      0
+                    </option>
+                    <option value="1">
+                      1
+                    </option>
+                    <option value="2">
+                      2
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Number of major vessels</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="vessels" size="0">
+                    <option selected>Choose...</option>
+                    <option value="0">
+                      0
+                    </option>
+                    <option value="1">
+                      1
+                    </option>
+                    <option value="2">
+                      2
+                    </option>
+                    <option value="3">
+                      3
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Thal</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="thal" size="0">
+                    <option selected>Choose...</option>
+                    <option value="3">
+                      normal
+                    </option>
+                    <option value="6">
+                      6 = fixed defect
+                    </option>
+                    <option value="7">
+                      7 = reversable effect
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-9">
+                  <input class="btn btn-secondary" type="reset" value="Reset"> 
+                  <input class="btn btn-primary" type="button" value="Save Changes">
+                </div>
+              </div>
+            </form>
+          </div>
+          
         </div> <!-- cd-popup-container -->
       </div> <!-- cd-popup -->
       
