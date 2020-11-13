@@ -162,7 +162,7 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Age</label>
                 <div class="col-lg-9">
-                  <input class="form-control" type="number" id="age" placeholder="Enter your Age">
+                  <input class="form-control" type="number" id="age" placeholder="Enter your Age" required>
                 </div>
               </div>
               <div class="form-group row">
@@ -182,7 +182,7 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Chest Pain type</label>
                 <div class="col-lg-9">
-                  <select class="form-control" id="cp" size="0">
+                  <select class="form-control" id="cp" size="0" required>
                     <option selected>Choose...</option>
                     <option value="0">
                       0
@@ -202,19 +202,19 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Resting Blood Pressure</label>
                 <div class="col-lg-9">
-                  <input class="form-control" type="number" placeholder="Values in mmHg" id='trestbps' value="Restingbp">
+                  <input class="form-control" type="number" placeholder="Values in mmHg" id='trestbps' value="Restingbp" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Serum Cholestoral</label>
                 <div class="col-lg-9">
-                  <input class="form-control" type="number" placeholder="Values in mg/dl" id="chol" value="Cholestoral">
+                  <input class="form-control" type="number" placeholder="Values in mg/dl" id="chol" value="Cholestoral" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Fasting Blood Sugar</label>
                 <div class="col-lg-9">
-                  <select class="form-control" id="fbs" size="0" >
+                  <select class="form-control" id="fbs" size="0" required>
                     <option selected>Choose...</option>
                     <option value="False">
                       > 120 mg/dl
@@ -228,7 +228,7 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Resting electrocardiographic results</label>
                 <div class="col-lg-9">
-                  <select class="form-control" id="restecg" size="0" >
+                  <select class="form-control" id="restecg" size="0" required>
                     <option selected>Choose...</option>
                     <option value="0">
                       0
@@ -245,13 +245,13 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Max. Heart Rate Achieved</label>
                 <div class="col-lg-9">
-                  <input class="form-control" type="number" id="thalach" value="heartrate"> 
+                  <input class="form-control" type="number" id="thalach" value="heartrate" required> 
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Exercise induced angina</label>
                 <div class="col-lg-9">
-                  <select class="form-control" id="exang" size="0">
+                  <select class="form-control" id="exang" size="0" required>
                     <option selected>Choose...</option>
                     <option value="no">
                       No
@@ -265,14 +265,14 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Oldpeak</label>
                 <div class="col-lg-9">
-                  <input class="form-control" type="number" id="oldpeak" value="oldpeak" placeholder="Values in decimals eg. 00.00">
+                  <input class="form-control" type="number" id="oldpeak" value="oldpeak" placeholder="Values in decimals eg. 00.00" required>
                   <small class="form-text text-muted" id="passwordHelpBlock">oldpeak = St depression induced by exercise relative to rest</small>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">The Slope of peak exercise ST segment</label>
                 <div class="col-lg-9">
-                  <select class="form-control" id="slope" size="0">
+                  <select class="form-control" id="slope" size="0" required>
                     <option selected>Choose...</option>
                     <option value="0">
                       0
@@ -289,7 +289,7 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Number of major vessels</label>
                 <div class="col-lg-9">
-                  <select class="form-control" id="ca" size="0">
+                  <select class="form-control" id="ca" size="0" required>
                     <option selected>Choose...</option>
                     <option value="0">
                       0
@@ -312,7 +312,7 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label">Thal</label>
                 <div class="col-lg-9">
-                  <select class="form-control" id="thal" size="0">
+                  <select class="form-control" id="thal" size="0" required>
                     <option selected>Choose...</option>
                     <option value="3">
                       Normal
@@ -329,7 +329,7 @@
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label form-control-label"></label>
                 <div class="col-lg-9">
-                  <input class="btn btn-secondary" type="reset" value="Reset"> 
+                  <input class="btn btn-secondary" type="reset" value="Reset" required> 
                   <a href="results.html"><input class="btn btn-primary" type="button" id="submit" value="Submit"></a>
                 </div>
               </div>
