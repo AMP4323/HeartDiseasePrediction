@@ -217,10 +217,10 @@
                   <select class="form-control" id="fbs" size="0" required>
                     <option selected>Choose...</option>
                     <option value="False">
-                      > 120 mg/dl
+                      < 120 mg/dl
                     </option>
                     <option value="True">
-                      < 120 mg/dl
+                      > 120 mg/dl
                     </option>
                   </select>
                 </div>
@@ -314,14 +314,17 @@
                 <div class="col-lg-9">
                   <select class="form-control" id="thal" size="0" required>
                     <option selected>Choose...</option>
+                    <option value="0">
+                      0
+                    </option>
+                    <option value="1">
+                      1
+                    </option>
+                    <option value="2">
+                      2
+                    </option>
                     <option value="3">
-                      Normal
-                    </option>
-                    <option value="6">
-                      Fixed Defect
-                    </option>
-                    <option value="7">
-                      Reversable Effect
+                      3
                     </option>
                   </select>
                 </div>
@@ -330,7 +333,7 @@
                 <label class="col-lg-3 col-form-label form-control-label"></label>
                 <div class="col-lg-9">
                   <input class="btn btn-secondary" type="reset" value="Reset" required> 
-                  <a href="results.html"><input class="btn btn-primary" type="button" id="submit" value="Submit"></a>
+                  <input class="btn btn-primary" type="button" id="submit" value="Submit">
                 </div>
               </div>
             </form>

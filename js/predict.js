@@ -50,6 +50,9 @@ document.getElementById('submit').onclick = function(){
     features = num_values.concat(cat_values);
 
     var prediction = clf.predict(features);
-    console.log(prediction);
+
+    var get_param = btoa(prediction + "|" + Date.now());
+
+    window.location.href = "results.html?id=" + get_param;
 
 }
