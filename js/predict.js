@@ -51,7 +51,23 @@ document.getElementById('submit').onclick = function(){
 
     var prediction = clf.predict(features);
 
-    var get_param = btoa(prediction + "|" + Date.now());
+    var inputs = {
+        'age' : age_field.value,
+        'trestbps' : trestbps_field.value,
+        'chol' : chol_field.value,
+        'thalach' : thalach_field.value,
+        'oldpeak' : oldpeak_field.value,
+        'sex' : sex_field.options[sex_field.selectedIndex].text,
+        'cp' : cp_field.options[cp_field.selectedIndex].text,
+        'fbs' : fbs_field.options[fbs_field.selectedIndex].text,
+        'restecg' : restecg_field.options[restecg_field.selectedIndex].text,
+        'exang' : exang_field.options[exang_field.selectedIndex].text,
+        'slope' : slope_field.options[slope_field.selectedIndex].text,
+        'ca' : ca_field.options[ca_field.selectedIndex].text,
+        'thal' : thal_field.options[thal_field.selectedIndex].text,
+    }
+
+    var get_param = btoa(prediction + "|" + Date.now() + "|" + JSON.stringify(inputs));
 
     window.location.href = "results.html?id=" + get_param;
 
