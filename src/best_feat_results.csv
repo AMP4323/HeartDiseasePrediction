@@ -1,0 +1,4 @@
+Features Type,Training Accuracy (%),Testing Accuracy (%),No. of Features Kept
+KNN All,96.31,98.98,6
+KNN Categorical Only,88.93,89.42,8
+KNN Numerical Only,94.94,100.0,4

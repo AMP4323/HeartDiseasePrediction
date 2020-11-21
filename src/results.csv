@@ -1,0 +1,9 @@
+Algorithm,Train Accuracy (%),Test Accuracy (%),Best Parameters
+Naive Bayes,81.69,77.82,
+Logistic Regression,88.52,80.89,C = 5.43
+Ridge Regression,87.98,83.62,alpha = 59.63623
+K-Neighbors,95.77,98.98,n_neighbors = 1
+SVM,96.72,98.98,C = 0.0001
+Stochastic Gradient Descent,88.66,81.91,alpha = 0.02354
+Decision Trees,96.31,96.93,max_depth = 11
+Random Forests,97.54,98.98,n_estimators = 40
