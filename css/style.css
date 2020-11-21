@@ -743,6 +743,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   border-radius: 50%;
   border: 2px solid #E79855;
+  margin-right: 1cm;
 }
 
 #about .about-container .icon-box .icon i {
