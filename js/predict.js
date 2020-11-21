@@ -2,7 +2,7 @@ var params;
 
 
 const request = async () => {
-    const response = await fetch('../json/params.json');
+    const response = await fetch('json/params.json');
     const json = await response.json();
     params = json;
 }
