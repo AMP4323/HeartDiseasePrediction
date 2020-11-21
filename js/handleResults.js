@@ -20,7 +20,6 @@ if (prediction == "1") {
     result_heading.innerText = 'You Don\'t have Heart Disease';
     result_heading.style = 'color: white; background: green;'
 }
-guidance.push("You can try following things at home: <br>");
 
 var inputs = JSON.parse(inputs_string);
 
@@ -29,7 +28,9 @@ if (inputs['chol'] > 200) guidance.push("* Cholestrol is higher than 200 mg/dl, 
 var target_thalach = 220 - inputs['age'];
 if (inputs['thalach'] > target_thalach) guidance.push("* Exceeded Max Heart Rate, Reduce it by taking frequent breaks during work and exercise.")
 
-if(inputs['oldpeak'] < 2.0) guidance.push("* ST Segment Depression is less than 2mm, It can lead to sudden Cardiac Arrest. Ask for Medical Help.")
+if(inputs['oldpeak'] > 0.0 && inputs['oldpeak'] < 2.0) guidance.push("* ST Segment Depression is less than 2mm, It can lead to sudden Cardiac Arrest. Ask for Medical Help.")
+
+if (guidance.length > 0) guidance.unshift("You can try following things at home: <br>");
 
 for (var guide in guidance) {
     guidance_heading.innerHTML += guidance[guide] + "<br>";
